@@ -12,6 +12,7 @@ export default defineConfig(({ mode }) => {
   // To load .env variables
   const envVars = loadEnv(mode, `../`);
   // https://vitejs.dev/config/
+  base: './'
   return {
     server: {
       port: Number(envVars.VITE_APP_PORT || 3000),
