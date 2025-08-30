@@ -46,7 +46,7 @@
   "engines": {
     "node": "18.0.0 - 22.x.x"
   },
-  "homepage": "./",
+  "homepage": "/ex_web/",
   "prettier": "@excalidraw/prettier-config",
   "scripts": {
     "deploy": "gh-pages -d excalidraw-app/build",
