@@ -46,9 +46,10 @@
   "engines": {
     "node": "18.0.0 - 22.x.x"
   },
-  "homepage": ".",
+  "homepage": "./",
   "prettier": "@excalidraw/prettier-config",
   "scripts": {
+    "deploy": "gh-pages -d excalidraw-app/build",
     "build-node": "node ./scripts/build-node.js",
     "build:app:docker": "yarn --cwd ./excalidraw-app build:app:docker",
     "build:app": "yarn --cwd ./excalidraw-app build:app",
@@ -90,5 +91,8 @@
   },
   "resolutions": {
     "strip-ansi": "6.0.1"
+  },
+  "dependencies": {
+    "gh-pages": "6.3.0"
   }
 }
